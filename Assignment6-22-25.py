@@ -65,25 +65,25 @@ class Course:
         print(f"{person.get_name()} is a {person.get_role()}")
 # Example usage
 if __name__ == "__main__":
-    # Create instructor
+# Create instructor
     instructor = Instructor("Dr. Smith", 45, "smith@example.com", "Mathematics")
-    # Create students
+# Create students
     student1 = Student("Alice", 20, "alice@example.com")
     student2 = Student("Bob", 22, "bob@example.com")
-    # Create course and assign instructor
+# Create course and assign instructor
     course = Course("Calculus 101")
     course.set_instructor(instructor)
-    # Add students to course
+# Add students to course
     course.add_student(student1)
     course.add_student(student2)
-    # Instructor assigns grades
+# Instructor assigns grades
     instructor.assign_grade(student1, 85)   
     instructor.assign_grade(student1, 90)
     instructor.assign_grade(student2, 65)
     instructor.assign_grade(student2, 70)
     # Generate and print course report
     print(course.generate_report())
-    # Print roles
+# Print roles
     Course.print_person_role(instructor)
     Course.print_person_role(student1)
     Course.print_person_role(student2)
